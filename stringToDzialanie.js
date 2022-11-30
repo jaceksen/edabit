@@ -30,3 +30,9 @@ const isTrue = (relation) => {
 console.log(isTrue('15>4'));
 
 // console.log(eval('2=2'));
+
+function isTrue(relation) {
+	return eval(relation.replace('=', '==='))
+}
+
+isTrue=r=>eval(r.replace(/=/g,'=='))
